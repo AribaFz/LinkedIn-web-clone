@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>             
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()"><span onclick="toggleMenu()">Me <img src="images/down-arrow.png" >  </span>
+            </div>   
+        </div>
+        <div class="navbar-right2"> 
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/tools.png" class="nav-tools"><span>Tools <img src="images/down-arrow.png"></span></a></li>
+                    <li><a href="#" style="color: #915907; text-decoration: underline;">Try Premium for free</a></li>
+                </ul>              
+            </div>       
+        </div>
+        
+        <!----profile drop down-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">  
+                <div class="user-info"> 
+                    <img src="images/user-1.jpg"> 
+                    <div> 
+                        <h3>Ariba Fazal</h3>
+                        <small>Student at School of Management Sciences<br></small>                         
+                    </div>
+                    
+                </div>
+                <a href="profile.html" class="viewbtn">View profile</a>  
+                <div class="profile-content">
+                    <h5>Account</h5> 
+                    <a href="#"> Settings & Privacy</a>
+                    <a href="#"> Help</a>
+                    <a href="#"> Language</a> 
+                    <h5>Manage</h5> 
+                    <a href="#"> Posts & Activity</a>
+                    <a href="#"> Job Posting Account</a>
+                    <div class="signout">
+                        <a href="#">Sign Out</a>
+                    </div> 
+                </div>
+            </div>
+        </div>    
+    </nav>
+    
+    <!--Navigation bar end-->
+
+    <div class="container">
+        
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/profilebg.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.jpg">
+                    <h1>Ariba Fazal</h1><br>
+                    <h3>Student at School of Management Sciences</h3>
+                    <ul>
+                        <hr>
+                        <li>Who's viewed your profile<span>129</span></li>
+                        <li>Impressions of your post<span>429</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link"> 
+                    <a href="#" style="text-decoration: underline;"><img src="images/premium.png">Try Premium for free</a>
+                    <a href="#"><img src="images/items.png"> My items</a>  
+                     
+                </div>
+            </div>
+            <div class="sidebar-activity"> 
+                <h3>Groups</h3>   
+                <h3>Events <img src="images/plus.png"> </h3>  
+                <h3>Followed Hashtags</h3>  
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div> 
+            </div>
+        </div> 
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="create-post"> 
+                <div class="create-post-input"> 
+                    <img src="images/user-1.jpg"> 
+                    <textarea rows="2" placeholder="Start a post"></textarea> 
+                </div> 
+                <div class="create-post-links"> 
+                    <li><img src="images/photo.png">Photo</li> 
+                    <li><img src="images/video.png">Video</li> 
+                    <li><img src="images/event.png">Event</li>
+                    <li><img src="images/article.png">Write Article</li> 
+                </div>
+            </div>
+            <div class="sort-by"> 
+                <hr>
+                <p>Sort by: <span>Top <img src="images/down-arrow.png"></span></p> 
+            </div>
+            <!--Post 1-->
+            <div class="post"> 
+                <div class="post-author"> 
+                    <img src="images/user-3.png"> 
+                    <div> 
+                        <span>Ted Mosby</span> &middot; 1st 
+                        <small>Architect at Goliath Architecture | Designer </small> 
+                        <small>2h &middot;<img src="images/publicpost.jpg"></small>
+                    </div> 
+                </div>   
+                <p>"Design is where science and art break even." - Mieke Gerritzen</p>
+                <img class="postimg" src="images/post1.jpg" width="100%">
+                <div class="post-stats"> 
+                    <div> 
+                        <img src="images/thumbsup.png"> 
+                        <img src="images/love.png"> 
+                        <img src="images/clap.png"> 
+                        <span class="liked-users">Sheldon Cooper and 75 others</span> 
+                    </div> 
+                    <div> 
+                        <span>29 comments &middot; 14 reposts</span> 
+                    </div>
+                </div>   
+                <div class="post-activity">
+                    <div class="post-activity-link"> 
+                        <img src="images/like.png"> 
+                        <span>Like</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/comment.png"> 
+                        <span>Comment</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/share.png"> 
+                        <span>Repost</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/send.png"> 
+                        <span>Send</span>
+                    </div> 
+                </div> 
+            </div>
+            <!--Post 2-->
+            <div class="post"> 
+                <div class="post-author"> 
+                    <img src="images/user-4.jpg"> 
+                    <div> 
+                        <span>Rachel Green</span> &middot; 1st 
+                        <small>Executive at Ralph Lauren </small> 
+                        <small>2h &middot;<img src="images/publicpost.jpg"></small>
+                    </div> 
+                </div>   
+                <p>I am thrilled to share that I am beginning a new journey as an Executive at Ralph Lauren.</p>
+                <img class="postimg" src="images/post-image-3.png" width="100%">
+                <div class="post-stats"> 
+                    <div> 
+                        <img src="images/thumbsup.png"> 
+                        <img src="images/love.png"> 
+                        <img src="images/clap.png"> 
+                        <span class="liked-users"> Emily Geller and 100 others</span> 
+                    </div> 
+                    <div> 
+                        <span>40 comments &middot; 20 reposts</span> 
+                    </div>
+                </div>   
+                <div class="post-activity">
+                    <div class="post-activity-link"> 
+                        <img src="images/like.png"> 
+                        <span>Like</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/comment.png"> 
+                        <span>Comment</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/share.png"> 
+                        <span>Repost</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/send.png"> 
+                        <span>Send</span>
+                    </div> 
+                </div> 
+            </div>
+            <!--Post 3-->
+            <div class="post"> 
+                <div class="post-author"> 
+                    <img src="images/user-2.png"> 
+                    <div> 
+                        <span>Kat Edison</span> &middot; 1st 
+                        <small>Head of Social Media department at Scarlet Magazines| Social Media Influencer </small> 
+                        <small>4h &middot;<img src="images/publicpost.jpg"></small>
+                    </div> 
+                </div>   
+                <p>"Social media is not just an activity; it is an investment of valuable time and resources. Surround yourself with people who not just support you and stay with you, but inform your thinking about ways to WOW your online presence"</p>
+                <img class="postimg" src="images/post-image-1.png" width="100%">
+                <div class="post-stats"> 
+                    <div> 
+                        <img src="images/thumbsup.png"> 
+                        <img src="images/love.png"> 
+                        <img src="images/clap.png"> 
+                        <span class="liked-users">Jane Sloan and 98 others</span> 
+                    </div> 
+                    <div> 
+                        <span>32 comments &middot; 21 reposts</span> 
+                    </div>
+                </div>   
+                <div class="post-activity">
+                    <div class="post-activity-link"> 
+                        <img src="images/like.png"> 
+                        <span>Like</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/comment.png"> 
+                        <span>Comment</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/share.png"> 
+                        <span>Repost</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/send.png"> 
+                        <span>Send</span>
+                    </div> 
+                </div> 
+            </div>
+            <!--Post 4-->
+            <div class="post"> 
+                <div class="post-author"> 
+                    <img src="images/user-5.jpg"> 
+                    <div> 
+                        <span>Ross Geller</span> &middot; 1st 
+                        <small>Professor | Paleontologist | Museum Curator </small> 
+                        <small>7h &middot;<img src="images/publicpost.jpg"></small>
+                    </div> 
+                </div>   
+                <p>Giant Footprint of Jurassic Carnivorous Dinosaur Found in UK.
+                    The 80-cm- (31.5-inch) long footprint was possibly made by a Megalosaurus-like theropod dinosaur, and is assigned to the ichnogenus Megalosauripus.
+                </p>
+                <img class="postimg" src="images/post4.jpg" width="100%">
+                <div class="post-stats"> 
+                    <div> 
+                        <img src="images/thumbsup.png"> 
+                        <img src="images/love.png"> 
+                        <img src="images/clap.png"> 
+                        <span class="liked-users">Lily Aldrin and 150 others</span> 
+                    </div> 
+                    <div> 
+                        <span>20 comments &middot; 70 reposts</span> 
+                    </div>
+                </div>   
+                <div class="post-activity">
+                    <div class="post-activity-link"> 
+                        <img src="images/like.png"> 
+                        <span>Like</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/comment.png"> 
+                        <span>Comment</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/share.png"> 
+                        <span>Repost</span> 
+                    </div> 
+                    <div class="post-activity-link"> 
+                        <img src="images/send.png"> 
+                        <span>Send</span>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+        <!-- right sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-news"> 
+                <img src="images/more.png" class="info-icon"> 
+                <h3>LinkedIn News</h3> 
+                <ul>
+                    <li> 
+                        <a href="#"> High demand for skilled manpower</a> 
+                        <span>1d ago &middot; 10,934 readers</span></li>
+                    <li>
+                        <a href="#"> AI Revolution</a> 
+                        <span>19h ago &middot; 1,552 readers</span> </li>
+                    <li>
+                        <a href="#"> Recessions affecting the IT industry</a> 
+                        <span>1d ago &middot; 27,290 readers</span> </li>
+                    <li>
+                        <a href="#"> Are we ready to talk 6G yet?</a> 
+                        <span>18h ago &middot; 8,208 readers</span></li>
+                    <li>
+                        <a href="#"> Mass layoffs at big IT Companies</a> 
+                        <span>12h ago &middot; 4,205 readers</span></li>
+                </ul>                         
+                <a href="#" class="read-more-link">Show More &#x2228</a>
+            </div>
+            <div class="sidebar-ad"> 
+                <small style="color: black;">Ad  &middot; &middot; &middot;</small> 
+                <p>Master the 5 priciples of Web Design</p> 
+                <div> 
+                    <img src="images/user-1.jpg"> 
+                    <img src="images/microsoft.png"> 
+                </div> 
+                <b>Learn with Microsoft</b> 
+                <a href="#" class="ad-link">Follow</a> 
+            </div>
+            <div class="sidebar-useful-links-home">  
+                <a href="#">About</a> 
+                <a href="#">Accessiblity</a> 
+                <a href="#">Help Center</a> 
+                <a href="#">Privacy & Terms ▼</a> 
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services ▼</a>   
+                <a href="#">Get the LinkedIn app</a> 
+                <a href="#">More</a>  
+            </div>
+            <div class="copyright-msg"> 
+                <img src="images/Linkedin-Logo.png"> 
+                <p style="color: #333;">Linkedin Corporation &#169; 2023</p> 
+            </div>
+        </div> 
+    </div> 
+    <script>
+        let profileMenu=document.getElementById("profileMenu");
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+    
+</body>
+</html>

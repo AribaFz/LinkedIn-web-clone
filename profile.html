@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" ><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()"><span>Me <img src="images/down-arrow.png"> </span>
+            </div>           
+        </div>
+        <div class="navbar-right2"> 
+            <div>
+                <ul>
+                    <li><a href="#"><img src="images/tools.png" class="nav-tools"><span>Tools <img src="images/down-arrow.png"></span></a></li>
+                    <li><a href="#" style="color: #915907; text-decoration: underline;">Try Premium for free</a></li>
+                </ul>              
+            </div>       
+        </div>
+        <!----profile drop down-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">  
+                <div class="user-info"> 
+                    <img src="images/user-1.jpg"> 
+                    <div> 
+                        <h3>Ariba Fazal</h3>
+                        <small>Student at School of Management Sciences<br></small> 
+                        
+                    </div>
+                    
+                </div>
+                <a href="profile.html" class="viewbtn">View profile</a>  
+                <div class="profile-content">
+                    <h5>Account</h5> 
+                    <a href="#"> Settings & Privacy</a>
+                    <a href="#"> Help</a>
+                    <a href="#"> Language</a> 
+                    <h5>Manage</h5> 
+                    <a href="#"> Posts & Activity</a>
+                    <a href="#"> Job Posting Account</a>
+                    <div class="signout">
+                        <a href="#">Sign Out</a>
+                    </div> 
+                </div>
+            </div>
+        </div>    
+    </nav>
+    
+    <!--Navigation bar end-->
+
+    <div class="container">
+        <!----profile-content----> 
+        <div class="profile-main">
+            <div class="profile-container"> 
+                <img src="images/profilebg.png" width="100%"> 
+                <div class="profile-container-inner"> 
+                    <img src="images/user-1.jpg" class="profile-pic"> 
+                    <h1>Ariba Fazal</h1> 
+                    <b>Student at School of Management Sciences</b> 
+                    <p>Varanasi, Uttar Pradesh, India &middot; <a href="#">Contact info</a><br><a href="#">429 connections</a></p> 
+                </div> 
+                <div class="profile-btn">
+                    <a href="#" class="open">Open to</a>
+                    <a href="#" class="addprof">Add profile section</a>
+                    <a href="#" class="more">More</a>                
+                </div>
+            </div>
+            <div class="profile-description"> 
+                <h2>About</h2> 
+                <p>I am a third-year computer science student at School of Management Sciences, with a focus on frontend development. 
+                    I have a strong interest in designing and developing web applications that are user-friendly, accessible, and responsive.
+                    I have experience in HTML, CSS, JavaScript, React, and Bootstrap, and I am always eager to learn new technologies and frameworks.</p> 
+                <a href="#" class="see-more-link">...see more</a> 
+            </div>
+
+            <div class="profile-description"> 
+                
+                <div class="head-of-block" id="exp">
+                    <h2>Experience</h2> 
+                    <a href="#"><img src="images/plus.png"></a>" "                   
+                    <a href="#"><img src="images/edit-icon.jpg"></a>
+                </div>
+                
+                <div class="profile-desc-row"> 
+                    <img src="images/exp1.png"> 
+                    <div>  
+                        <h3>Front-End Developer</h3> 
+                        <b>IBM &middot; Internship</b> 
+                        <b>Jan 2023 - Present &middot; 3 mos</b> 
+                        <b>Remote</b>
+                        <p><br>AICTE 8 weeks Internship under IBM SkillsBuild Programe on Front End Development.</p><br>
+                        <p><b>Skills: </b>HTML, CSS, JS</p> 
+                        <hr>
+                    </div> 
+                </div>
+
+                <div class="profile-desc-row"> 
+                    <img src="images/internshala.png"> 
+                    <div>  
+                        <h3>Internshala Student Partner - Campus Ambassador</h3> 
+                        <b>Internshala &middot; Internship</b> 
+                        <b>Oct 2021 - Dec 2021 &middot; 3 mos</b> 
+                        <b>Remote</b><br>
+                        <p><b>Skills: </b>Leadership, Management, Problem Solving </p> 
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="profile-description"> 
+                <div class="head-of-block" id="edu">
+                    <h2>Education</h2> 
+                    <a href="#"><img src="images/plus.png"></a>" "                   
+                    <a href="#"><img src="images/edit-icon.jpg"></a>
+                </div> 
+                <div class="profile-desc-row"> 
+                    <img src="images/smslogo.jpg"> 
+                    <div> 
+                        <h3>School of Management Sciences, Varanasi</h3> 
+                        <b>BCA (Bachelor of Compuer Applications)</b> 
+                        <b>2020 - 2023</b> 
+                        <hr id="hr2"> 
+                    </div>
+                </div> 
+
+                <div class="profile-desc-row"> 
+                    <img src="images/sjcslogo.jpg"> 
+                    <div> 
+                        <h3>St. Joseph's Convent School</h3> 
+                        <b>10+2, Mathematics and Compuer Science</b> 
+                        <b>2005 - 2020</b> <b></b>                        
+                    </div>
+                </div> 
+            </div> 
+
+            <div class="profile-description"> 
+                <div class="head-of-block">
+                    <h2>Courses  </h2> 
+                    <a href="#addcourse"><img src="images/plus.png"></a>" "                   
+                    <a href="#"><img src="images/edit-icon.jpg"></a>
+                    <div id="addcourse" class="course-form">
+                        <div>
+                            <div id="title">
+                                <a href="#close" title="Close" class="close">&#10006</a>
+                                <h2>Add course</h2>                                
+                            </div>
+                            <hr>
+                            <small>* Indicates required</small>
+                          <form>
+                            <label>Course name*</label> 
+                            <input type="text" placeholder="Ex: Java">
+                            <label>Number</label>
+                            <input type="text" placeholder="Ex: HS129">
+                            <label>Provided by</label>
+                            <input type="text" placeholder="Ex: IBM">
+                            <label>Associated with</label>
+                            <input type="text" placeholder="Ex: ABC College">
+                            <label>Skills learned</label>
+                            <button type="button">+ Add Skills</button> 
+                            <label>Media</label>
+                            <small>Certificate of completion, performance report, etc.</small>
+                            <button type="button">+ Add Media</button> 
+                            <hr>
+                           </form>
+                           <div id="save">
+                            <button>Save</button>
+                           </div>                           
+                        </div>
+                        <a href="#close" title="Close" class="close"></a>
+                    </div>
+                </div> 
+                <div class="courses">
+                    <div>
+                        <h4>Front-End Web Development</h4> 
+                        <b>Provided by: IBM SkillsBuild </b> 
+                        <b>Associated with: IBM, AICTE</b>
+                        <b>Skills learned: HTML, CSS, JavaScript</b> 
+                        <b>Certificate: <img src="images/cert1.jpg"></b>  
+                        <hr>
+                    </div>                                     
+                </div>
+                <div class="courses">
+                    <div>
+                        <h4>Programming with C & C++</h4> 
+                        <b>Number: 2EF576-9864-0FA6FAD90F</b>
+                        <b>Provided by: Internshala </b>                         
+                        <b>Skills learned: C, C++, OPPs</b> 
+                        <b>Certificate: <img src="images/programming.jpg"></b>  
+                        <hr>
+                    </div>                                     
+                </div>
+                <div class="courses">
+                    <div>
+                        <h4>Java Training</h4> 
+                        <b>Number: EC-ST-1629</b>
+                        <b>Provided by: Spoken Tutorials, IIT Bombay </b> 
+                        <b>Associated with: School of Management Sciences</b>                        
+                        <b>Skills learned: Java</b> 
+                        <b>Certificate: <img src="images/java iit bombay_jpg.jpg"></b>  
+                        <hr>
+                    </div>                                     
+                </div>
+                <a href="#" class="course-link">Show all 20 courses <img src="images/right-arrow.png"></a>              
+            </div>              
+        </div>
+        
+        <!----profile-sidebar---->
+        <div class="profile-sidebar">
+            <div class="right-top">
+                <a href="#">Edit public profile & URL</a>
+                <hr>
+                <a href="#">Add profile in another language</a>
+            </div>
+            <div class="sidebar-ad"> 
+                <small style="color: black;">Ad &middot; &middot; &middot;</small> 
+                <p>You've got the skills, we've got the opportunities</p> 
+                <div> 
+                    <img src="images/user-1.jpg"> 
+                    <img src="images/ad.png"> 
+                </div> 
+                <b>Ariba, <strong>aramco</strong> is hiring!</b> 
+                <a href="#" class="ad-link">Follow</a> 
+            </div>
+
+            <div class="sidebar-people"> 
+                <h3>People also viewed </h3>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user.png"> 
+                    <div> 
+                        <h2>Pragya Singh</h2>  
+                        <p>Student at School of Management Sciences</p> 
+                        <a class="people-info" href="#"><img src="images/send.png">&MediumSpace; Message </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user.png"> 
+                    <div> 
+                        <h2>Akanksha Singh</h2>  
+                        <p>Student at BIT Patna</p> 
+                        <a class="people-info" href="#"><img src="images/send.png">&MediumSpace; Message </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user.png"> 
+                    <div> 
+                        <h2>Azima Naaz</h2>  
+                        <p>Student at Aligarh Muslim University</p> 
+                        <a class="people-info" href="#"><img src="images/send.png">&MediumSpace; Message </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user.png"> 
+                    <div> 
+                        <h2>Asmita Upadhaya</h2>  
+                        <p>Student at VIT Vellore</p> 
+                        <a class="people-info" href="#"><img src="images/send.png">&MediumSpace; Message </a> 
+                    </div> 
+                </div>
+                <div class="show-more-link">
+                    <a href="#">Show more <img src="images/right-arrow.png"></a>
+                </div> 
+            </div> 
+
+            <div class="sidebar-people"> 
+                <h3>People you may know </h3>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user-3.png"> 
+                    <div> 
+                        <h2>Tony Stark</h2>  
+                        <p>Founder of Stark Technologies</p> 
+                        <a class="people-info" href="#"><img src="images/connect1.png"> Connect </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user-4.jpg"> 
+                    <div> 
+                        <h2>Bernadette</h2>  
+                        <p>Head of Marketing at Alibaba</p> 
+                        <a class="people-info" href="#"><img src="images/connect1.png"> Connect </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user-5.jpg"> 
+                    <div> 
+                        <h2>Bruce Banner</h2>  
+                        <p>Head Researcher at Bell Laboratories</p> 
+                        <a class="people-info" href="#"><img src="images/connect1.png"> Connect </a> 
+                    </div> 
+                </div>
+                <hr>
+                <div class="sidebar-people-row"> 
+                    <img src="images/user-2.png"> 
+                    <div> 
+                        <h2>Veronica Park</h2>  
+                        <p>Software Developer at Microsoft</p> 
+                        <a class="people-info" href="#"><img src="images/connect1.png"> Connect </a> 
+                    </div> 
+                </div>
+                <div class="show-more-link">
+                    <a href="#">Show more <img src="images/right-arrow.png"></a>
+                </div> 
+            </div> 
+            <div class="sidebar-ad"> 
+                <a href="#"><img id="hire" src="images/hiringad.jpg"></a>
+            </div>        
+        </div>
+    </div>
+    <div class="profile-footer">
+        
+        <div class="sidebar-useful-links">
+            
+            <table>
+                <tr>
+                    <td><a href="#">About</a></td>
+                    <td><a href="#">Accessiblity</a></td>
+                    <td><a href="#">Talent Solutions</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Community Guidelines</a></td>
+                    <td><a href="#">Careers</a></td>
+                    <td><a href="#">Marketing Solutions</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Privacy & Terms  ▼</a></td>
+                    <td><a href="#">Ad Choices</a></td>
+                    <td><a href="#">Advertising</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Sales Solutions</a></td>
+                    <td><a href="#">Mobile</a></td>
+                    <td><a href="#">Small Business</a></td>
+                </tr>
+                <tr><td><a href="#">Safety Center</a></td></tr>
+            </table>
+            <div class="copyright-msg"> 
+                <img src="images/Linkedin-Logo.png"> 
+                <p>Linkedin Corporation &#169; 2023</p> 
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        let profileMenu=document.getElementById("profileMenu");
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+    
+</body>
+</html>
